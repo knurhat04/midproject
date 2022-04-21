@@ -1,0 +1,299 @@
+#preloader{
+  background: #000 url(loader.gif) no-repeat center center;
+  background-size:20%;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+
+}
+body{
+  font-family: 'Montserrat', sans-serif;
+}
+#slidenav{
+  background-color: #333;
+  position: fixed;
+  top: -50px;
+  width: 100%;
+  display: block;
+  transition: top 0.3s;
+}
+
+#slidenav a ul li {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 15px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+#slidenav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+.nav__cart-link{
+     position: relative;
+     display: inline-block;
+     padding:5px;
+     margin-top: 6px;
+ }
+
+ .nav__cart-number{
+     position: absolute;
+     top: 0;
+     right: 0;
+     width:20px;
+     height: 20px;
+     border-radius: 50%;
+     color: #fff;
+     font-weight: bold;
+     font-size: 12px;
+     line-height: 20px;
+     background: #b4710b;
+     text-align: center;
+ }
+
+hr {
+  display: block;
+  margin-top: 0.5em;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: outset;
+  border-width: 0.2px;
+  border-color: black;
+}
+
+.title-bar {
+  width: 100%;
+  height: 82px;
+  background-color: #E0E0E0;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  font-family: 'Gilda Display', serif;
+}
+
+.newcol {
+  margin-top: 0em;
+  height: 800px;
+  background-image: url('https://static.tildacdn.com/tild3761-6466-4265-b537-316531333563/slide2.jpg');
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.newcol_text {
+text-align: left;
+padding-top: 180px;
+padding-left: 100px;
+}
+
+.sections{
+  margin-top: 1em;
+}
+.col-lg-6{
+  padding-left: 0;
+    padding-right: 0.1em;
+}
+.a-first{
+  margin-top: 0.1em;
+  text-align: center;
+  background-color: #e7e7e7;
+  height: 500px;
+  margin-left: 5px;
+}
+.a-first:hover{
+  background-color: #f8f9fa;
+}
+.a-first_img{
+  height: 350px;
+  margin-top: 50px;
+}
+.a-first_txt{
+  color: black;
+  font-family: 'Montserrat',Arial,sans-serif;
+  font-size: 25px;
+  margin-top: 15px;
+}
+.a-second{
+  margin-top: 0.1em;
+  text-align: center;
+  background-color: #e7e7e7;
+  height: 500px;
+}
+.a-second:hover{
+  background-color: #f8f9fa;
+}
+.a-second_img{
+  height: 350px;
+  margin-top: 50px;
+}
+.a-second_txt{
+  color: black;
+  font-family: 'Montserrat',Arial,sans-serif;
+  font-size: 25px;
+  margin-left: 60px;
+    margin-top: 15px;
+}
+.a-second_txt:hover{
+  text-decoration: none;
+}
+.a-third{
+  margin-top: 0.1em;
+  background-color: #e7e7e7;
+  height: 500px;
+  text-align: center;
+    margin-left: 5px;
+}
+.a-third:hover{
+  background-color: #f8f9fa;
+}
+.a-third_img{
+  height: 300px;
+  margin-top: 50px;
+}
+.a-third_txt{
+  color: black;
+  font-family: 'Montserrat',Arial,sans-serif;
+  font-size: 25px;
+    margin-top: 35px;
+}
+.a-fourth{
+  text-align: center;
+  margin-top: 0.1em;
+  background-color: #e7e7e7;
+  height: 500px;
+}
+.a-fourth:hover{
+  background-color: #f8f9fa;
+}
+.a-fourth_img{
+  height: 300px;
+  margin-top: 50px;
+}
+.a-fourth_txt{
+  color: black;
+  font-family: 'Montserrat',Arial,sans-serif;
+  font-size: 25px;
+    margin-top: 35px;
+}
+.btnn {
+  background-color: #b4710b;
+  color: #fff;
+  letter-spacing: .5px;
+  font-size: 16px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 42px;
+  border-radius: 6px;
+  padding: 5px 35px;
+  transition: 0.1s linear;
+  text-decoration: none;
+  margin-right: 6em;
+  font-family: 'Montserrat',Arial,sans-serif;
+}
+.btnn:hover{
+  background-color: white;
+  color: #5b493b;
+  box-shadow: 0px 4px 25px;
+  text-decoration: none;
+}
+.toppick {
+  margin-top: 5em;
+  font-family: 'Gilda Display', serif;
+  font-style: normal;
+  font-weight: 600;
+  margin-left: 1em;
+}
+.pickfirst{
+  margin-left: 1em;
+}
+.img1{
+  height: 400px;
+}
+.pickfirst_text{
+  color: black;
+  font-size: 15px;
+  font-family: 'Gilda Display', serif;
+  text-decoration: none;
+}
+.pick_second{
+  position:absolute;
+    left: 370px;
+    top: 1019px;
+    z-index:2;
+}
+.picksecond_text{
+  color: black;
+  font-size: 15px;
+  font-family: 'Gilda Display', serif;
+  text-decoration: none;
+}
+.pick_third{
+  position:absolute;
+    left: 700px;
+    top: 1019px;
+    z-index:2;
+}
+.pickthird_text{
+  color: black;
+  font-size: 15px;
+  font-family: 'Gilda Display', serif;
+  text-decoration: none;
+}
+.pick_fourth{
+  position:absolute;
+    left: 1030px;
+    top: 1019px;
+    z-index:2;
+}
+.pickfourth_text{
+  color: black;
+  font-size: 15px;
+  font-family: 'Gilda Display', serif;
+  text-decoration: none;
+}
+.club{
+  height: 180px;
+}
+.club-txt{
+  width:55%;
+    margin-right:2%;
+    float: left;
+    margin-top: 50px;
+    color: white;
+}
+.club-data{
+  width:42%;
+    float: left;
+    margin-top: 50px;
+}
+.club-submit{
+  margin-top: 20px;
+}
+#toTop {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: #b4710b;;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#toTop:hover {
+  background-color: #555;
+}

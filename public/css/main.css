@@ -1,0 +1,521 @@
+*, *::before, *::after {
+    box-sizing:border-box;
+}
+
+/* font-family: 'Gilda Display', serif;
+font-family: 'Montserrat', sans-serif; */
+
+body{
+  font-family: 'Montserrat', sans-serif;
+    color: #fff;
+margin: 0;
+}
+
+#snackbar {
+  visibility: hidden;
+  min-width: 250px;
+  margin-left: -125px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  border-radius: 2px;
+  padding: 16px;
+  position: fixed;
+  z-index: 1;
+  left: 50%;
+  bottom: 30px;
+  font-size: 17px;
+}
+
+#snackbar.show {
+  visibility: visible;
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@-webkit-keyframes fadein {
+  from {bottom: 0; opacity: 0;}
+  to {bottom: 30px; opacity: 1;}
+}
+
+@keyframes fadein {
+  from {bottom: 0; opacity: 0;}
+  to {bottom: 30px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+  from {bottom: 30px; opacity: 1;}
+  to {bottom: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+  from {bottom: 30px; opacity: 1;}
+  to {bottom: 0; opacity: 0;}
+}
+
+.navbar{
+    /* background-color: black; */
+
+
+
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #f8f9fa;
+}
+
+.container {
+    width: 1170px;
+    margin: 0 auto;
+}
+
+
+
+.nav__row {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+
+}
+
+.nav-item{
+    text-align: center;
+    color:#fff;
+    align-items: center;
+
+}
+.logo_t{
+}
+
+/* .logo_t:hover{
+    box-shadow: black;
+    background-color: black;
+} */
+.logo{
+   margin-top: 10px;
+}
+
+
+.nav_logo, a.nav_logo{
+    margin-right: 500px;
+    text-decoration: none;
+    font-family: "AdineuePRO", Helvetica, Arial, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 38px;
+    color: black;
+}
+
+a.nav_logo:hover{
+    text-decoration: underline;
+    color: #F72464;
+}
+
+.header_cont{
+    display: flex;
+    flex-wrap: wrap;
+
+
+}
+
+.nav__list {
+    margin-right: 200px;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+
+}
+
+.nav__item {
+    margin-right: 30px;
+    font-size: 18px;
+}
+
+.nav__item:last-child{
+    margin-right: 0;
+}
+
+.nav__link {
+    text-decoration: none;
+    color: white;
+}
+.nav__link:hover{
+    color: #F72464 ;
+}
+
+.nav__cart {
+
+}
+ .nav__cart-link{
+     position: relative;
+     display: inline-block;
+     padding:5px;
+     margin-top: 6px;
+ }
+
+ .nav__cart-number{
+     position: absolute;
+     top: 0;
+     right: 0;
+     width:20px;
+     height: 20px;
+     border-radius: 50%;
+     color: #fff;
+     font-weight: bold;
+     font-size: 12px;
+     line-height: 20px;
+     background: #b4710b;
+     text-align: center;
+ }
+
+ .abc{
+     background-image: url(https://phonoteka.org/uploads/posts/2021-10/1633108581_28-phonoteka-org-p-stilnii-muzhskoi-fon-krasivo-29.jpg);
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-position: center;
+     width: 100%;
+     height: 1000px;
+ }
+
+  /* Header */
+  .header {
+
+  }
+
+  .header__row{
+      position: relative;
+      display: flex;
+      justify-content: flex-end;
+
+
+  }
+
+
+  .header__content{
+      position: absolute;
+      width: 670px;
+      left: 0;
+      top: 40%;
+      transform: translateY(-50%);
+  }
+
+  .header__title{
+    margin: 0;
+    margin-bottom: 20px;
+    font-family: 'Montserrat',Arial,sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 72px;
+    line-height: 96px;
+
+  }
+
+  .header__text{
+      clear: left;
+      margin-bottom: 60px;
+      font-family: 'Montserrat',Arial,sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 1.5  ;
+  }
+
+  .header__btn{
+
+
+  }
+  .button{
+      display: inline-block;
+      padding: 0 33px;
+      height: 51px;
+      background:  #85540a;
+      box-shadow: 0px 4px 15px rgba(155, 140, 141, 0.35);
+      border-radius: 4px;
+
+      font-family: 'Montserrat',Arial,sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 26px;
+      line-height: 51px;
+      text-align: center;
+      text-decoration: none;
+      color: #fff;
+      transition: box-shadow 0.2s ease-in, backround-color 0.2s ease-in;
+
+
+  }
+  .button:hover{
+      color: #fff;
+      text-decoration: none;
+      box-shadow: 0px 4px 25px rgba(206, 206, 189, 0.671);
+      background-color: rgba(82, 81, 35, 0.671);
+  }
+
+  .head__photo{
+    float: right;
+    height: 60;
+    width: 100;
+    padding: 0 30;
+  }
+  .header__photo{
+  }
+
+  /* Featured Products */
+
+  .featured {
+      padding-top: 5%;
+
+
+}
+
+ /* Section header */
+
+.section-header {
+    margin-bottom: 10px;
+
+
+}
+.section-header__title {
+    margin: 0;
+    font-family: 'Gilda Display', serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 42px;
+    line-height: 56px;
+    text-align: center;
+    color: black;
+
+
+
+
+}
+.section-header__description {
+    font-family: 'Montserrat',Arial,sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #999;
+}
+
+
+/* Product */
+
+.product-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+   justify-content: space-between;
+   row-gap: 40px;
+}
+
+.product__link{
+    display: inline-block;
+    text-decoration: none;
+    transition:opacity 0.2s easy-in;
+}
+.product__link:hover{
+    opacity: 0.8;
+    text-decoration: none;
+}
+.text-start{
+    color: #fff;
+    list-style-type: none;
+}
+
+
+
+
+
+.product {
+    text-align: center;
+    max-width: 270px;
+}
+.product__img {
+
+
+}
+.product__title {
+    text-decoration: none;
+    margin: 0;
+    margin-bottom: 12px;
+    font-family: 'Playfair Display', serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 25px;
+    line-height: 27px;
+    text-align: center;
+    color: black;
+}
+
+.product_price {
+    text-align: center;
+    font-size: 14px;
+    line-height: 19px;
+    text-transform: uppercase;
+
+
+
+}
+.product__price-old {
+    margin-right: 10px;
+    text-transform: uppercase;
+    color: #999;
+    text-decoration: none;
+}
+.product__price-new {
+    font-weight: bold;
+    color: #b4710b
+
+}
+
+.container{
+    margin-right: px;
+    text-transform: uppercase;
+    padding-right: 40px;
+
+}
+
+
+.row{
+    text-align: center;
+}
+ .visually-hidden {
+     color: #000000;
+ }
+
+.col{
+    font-family: 'Montserrat',Arial,sans-serif;
+    color: rgb(39, 38, 32);
+}
+ h5{
+     color:#b4710b
+ }
+ p {
+     color: #000000;
+ }
+
+
+
+
+
+ input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+
+.container {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color:  red;
+  cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)}
+  to {-webkit-transform: scale(1)}
+}
+
+@keyframes animatezoom {
+  from {transform: scale(0)}
+  to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
