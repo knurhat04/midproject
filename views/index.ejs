@@ -1,0 +1,350 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>T-Store</title>
+    <script src="https://kit.fontawesome.com/c98d165499.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>    <link rel="stylesheet" href="css/main.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gilda+Display&family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="https://play-lh.googleusercontent.com/3BSlWKyp048lqNwkiUC6OsaiDobtP8FH1bGr2GUP7-8HKI9o4Avrwk8LWvOVqGjedpjp">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("#aaa").click(function() {
+                $(".club").hide("slow");
+            });
+        });
+    </script>
+    <script src="https://maps.api.2gis.ru/2.0/loader.js?pkg=full"></script>
+    <script type="text/javascript">
+        var map;
+
+        DG.then(function () {
+            map = DG.map('map', {
+                center: [51.09, 71.40],                zoom: 13,
+            });
+
+            DG.marker([51.09, 71.40]).addTo(map).bindPopup('Вы кликнули по мне!');
+        });
+    </script>
+</head>
+<body>
+<div class="abc container-fluid" >
+    <nav class="navbar navbar-expand-lg navbar-light mb-3" id="myHeader" >
+        <a class="navbar-brand mb-0 h1 " id= "title" onmousedown="onMouseDownTitle()" onmouseup="onMouseUpTitle()" onclick="rotate()" href="#" style="font-size: 30px; color: #fff;">T-Store</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="collection" style="font-size: 20px;">Collection </a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-expanded="false" style="font-size: 20px;">
+                        Men
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="men">T-Shirts</a>
+                        <a class="dropdown-item" href="men">Hoodies</a>
+                        <a class="dropdown-item" href="men">Sneakers</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="women" style="font-size: 20px;">Women</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" style="font-size: 20px; color: #fff">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " style="font-size: 20px; color: #fff">Faq</a>
+                </li>
+            </ul>
+            <div class="nav__cart">
+                <a href="#" class="nav__cart-link">
+                    <span class="nav__cart-number" id="cart_counter">0</span>
+                    <img src="https://static.tildacdn.com/tild3437-3762-4239-a165-373062316239/CART_WHITE.svg" width="30px" height="25px" alt="Cart">
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row content-align-between" style=" font-size: 20  px;">
+            <div class="pe-3 w-md-50 mx-2 column content-align-between" style="height: 450px">
+                </br>
+                </br>
+                </br>
+
+                <h1 class="col-md-4 col-md-pull-4">T-Store Spring  Collection</h1>
+                </br>
+                <p class="text-start">European level. Sale of the best models with 50% discount!<br>
+                    Only this week you can buy clothes with high quality for 1990 tenge!
+                    </br>
+
+                <ol class="text-start">
+                    <li>Fast delivery</li>
+                    <li>Big discounts</li>
+                    <li>All sizes</li>
+                </ol>
+                </br>
+                </p>
+                </br>
+
+                <div class="s">
+                    <button onclick="document.getElementById('id01').style.display='block'" style="width:auto; background-color: #85540a " class="button">SHOP NOW</button>
+                </div>
+                </br>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- The Modal -->
+<div id="id01" class="modal">
+  <span onclick="document.getElementById('id01').style.display='none'"
+        class="close" title="Close Modal">&times;</span>
+
+    <!-- Modal Content -->
+    <form class="modal-content animate" action="/action_page.php">
+        <div class="imgcontainer">
+            <img src="./img/img_avatar2.png" alt="Avatar" class="avatar">
+        </div>
+
+        <div class="container">
+            <label for="uname"><b>Username</b></label>
+            <input type="text" placeholder="Enter Username" name="uname" required>
+
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+
+            <button type="submit">Login</button>
+            <label>
+                <input type="checkbox" checked="checked" name="remember"> Remember me
+            </label>
+        </div>
+
+        <div class="container" style="background-color:#f1f1f1">
+            <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+            <span class="psw">Forgot <a href="#">password?</a></span>
+        </div>
+    </form>
+</div>
+
+<script>
+    // Get the modal
+    var modal = document.getElementById('id01');
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+</script>
+
+<section class="featured" style="margin-bottom: 50px">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-header__title"> New Products</h2>
+            <div class="section-header__description">
+                <p>dolor sit amet </p>
+            </div>
+        </div>
+        <div class="product-wrapper">
+            <!--Product-->
+            <a href="#" class="product__link"  id="cart" onclick="cartIncrement()">
+                <div class="col-sm">
+                    <img src="./img/9b55b0a5cdb6fbf3acfe632d36c475b8.jpg" height="300" width="200" alt="" class="product__img" style=" ">
+                    <h4 class="product__title">Shirt</h4>
+                    <div class="product_price">
+                        <span class="product__price-old">$100.00</span>
+                        <span class="product__price-new">$95.00</span>
+                    </div>
+                </div>
+            </a>
+            <!-- // product -->
+            <!--Product-->
+            <a href="#" class="product__link"  id="cart" onclick="cartIncrement()">
+                <div class="col-sm">
+                    <img src="./img/stilnyj-muzhchina.jpg" height="300" width="200" alt="" class="product__img">
+                    <h4 class="product__title">Costum</h4>
+                    <div class="product_price">
+                        <span class="product__price-old">$300.00</span>
+                        <span class="product__price-new">$290.00</span>
+                    </div>
+                </div>
+            </a>
+            <!-- // product -->
+            <!--Product-->
+            <a href="#" class="product__link"  id="cart" onclick="cartIncrement()">
+                <div class="col-sm">
+                    <img src="./img/dragon_-khaki-1.jpg" height="300" width="200" alt="" class="product__img">
+                    <h4 class="product__title">Hoody</h4>
+                    <div class="product_price">
+                        <span class="product__price-old">$160.00</span>
+                        <span class="product__price-new">$150.00</span>
+                    </div>
+                </div>
+            </a>
+            <!-- // product -->
+            <!--Product-->
+            <a href="#" class="product__link"  id="cart" onclick="cartIncrement()">
+                <div class="col-sm">
+                    <img src="./img/new3.webp" width="200" height="300" alt="" class="product__img">
+                    <h4 class="product__title">Windbreaker</h4>
+                    <div class="product_price">
+                        <span class="product__price-old">$200.00</span>
+                        <span class="product__price-new">$190.00</span>
+                    </div>
+                </div>
+            </a>
+            <!-- // product -->
+            <!--Product-->
+            <a href="#" class="product__link"  id="cart" onclick="cartIncrement()">
+                <div class="col-sm">
+                    <img src="./img/01.jpg" width="200" height="300" alt="" class="product__img">
+                    <h4 class="product__title">Sweater</h4>
+                    <div class="product_price">
+                        <span class="product__price-old">$180.00</span>
+                        <span class="product__price-new">$175.00</span>
+                    </div>
+                </div>
+            </a>
+            <!-- // product -->
+            <!--Product-->
+            <a href="#" class="product__link"  id="cart" onclick="cartIncrement()">
+                <div class="col-sm">
+                    <img src="./img/Cap-Mens-1.jpg" width="200" height="300" alt="" class="product__img">
+                    <h4 class="product__title">Cap</h4>
+                    <div class="product_price">
+                        <span class="product__price-old">$100.00</span>
+                        <span class="product__price-new">$95.00</span>
+                    </div>
+                </div>
+            </a>
+            <!-- // product -->
+            <!--Product-->
+            <a href="#" class="product__link"  id="cart" onclick="cartIncrement()">
+                <div class="col-sm">
+                    <img src="./img/TB1lcPAKVXXXXcCXFXX0DYj8XXX_020737.jpg" width="200" height="300" alt="" class="product__img">
+                    <h4 class="product__title">Shoes</h4>
+                    <div class="product_price">
+                        <span class="product__price-old">$130.00</span>
+                        <span class="product__price-new">$125.00</span>
+                    </div>
+                </div>
+            </a>
+            <!-- // product -->
+            <!--Product-->
+            <a href="#" class="product__link"  id="cart" onclick="cartIncrement()">
+                <div class="col-sm">
+                    <img src="./img/newnewnew.webp" width="200" height="300" alt="" class="product__img">
+                    <h4 class="product__title">Trousers</h4>
+                    <div class="product_price">
+                        <span class="product__price-old">$100.00</span>
+                        <span class="product__price-new">$95.00</span>
+                    </div>
+                </div>
+            </a>
+            <!-- // product -->
+        </div>
+</section>
+
+
+
+<form action="#" style="background-color: #85540a">
+    <div class ="club container">
+        <div class="club-txt col-6 col-md-12 col-sm-12">
+            <h2 id="mouseover-txt">JOIN OUR CREATORS CLUB</h2>
+        </div>
+        <div  class="club-data col-lg-12 col-md-12 col-sm-12">
+            <div>
+                <input type="text" placeholder="Name" name="name" required>
+                <input id="ww" type="text" placeholder="Email address" name="mail" required>
+
+
+                <div class="club-submit">
+                    <button onclick="myFunction()" id="">Join</button>
+
+                    <div id="snackbar">Success!</div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+<div class="container-fluid bg-light w-100 mt-5" style="text-align: center;" >
+</div>
+<div id="map" style="width:1500px; height:400px"></div>
+<footer class="py-5">
+    <div class="row">
+        <div class="col-lg-2 col-md-6 col-sm-12">
+            <h5 style="color: #85540a"> <strong > About Us</strong></h5>
+            <ul class="nav flex-column">
+                <li class="nav-item mb-2 col-l-12 col-m-12 col-s-12"><a href="#" class="nav-link p-0 text-muted"> Location: Kabanbai Batyr 60a/13</a></li>
+                <li class="nav-item mb-2 col-l-12 col-m-12 col-s-12"><a href="#" class="nav-link p-0 text-muted">Phone: 8777 777 77 77 </a></li>
+                <li class="nav-item mb-2 col-l-12 col-m-12 col-s-12"><a href="#" class="nav-link p-0 text-muted"> Email: @nurkanat.03wf@mail.ru</a></li>
+            </ul>
+        </div>
+
+        <div class="col-lg-2 col-md-6 col-sm-12">
+            <h5 style="color: #85540a"> <strong> Shop</strong> </h5>
+            <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Sell online</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Examples</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Website editors </a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Online retail</a></li>
+            </ul>
+        </div>
+
+        <div class="col-lg-2 col-md-6 col-sm-12">
+            <h5 style="color: #85540a"> <strong> Main</strong></h5>
+            <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Events</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">News</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Awards</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+            </ul>
+        </div>
+
+        <div class="col-lg-4 col-md-7 col-sm-12">
+            <form>
+                <h5> <strong> Subscribe to our newsletter</strong></h5>
+                <p>Monthly digest of whats new and exciting from us.</p>
+                <div class="d-flex w-100 gap-2" id="aaa">
+                    <input id="ww" type="text" class="form-control" placeholder="Email address" onkeypress="playClick()">
+                    <button  class="btn btn-dark" type="button" style="background-color: #85540a;" id="myBtn">Subscribe</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="d-flex justify-content-between py-4 border-top" style="height: 1px;">
+        <p>© 2022 T-Store Inc. All rights reserved.</p>
+    </div>
+</footer>
+</div>
+<script>
+    document.getElementById("title").innerHTML = "T-Store";
+    document.getElementById("title").style.setProperty("font-size", "28px");
+    document.getElementById("title").style.setProperty("color", "#fff");
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+<script src="main.js"></script>
+
+</body>
+</html>
