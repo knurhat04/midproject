@@ -19,9 +19,6 @@ mongoose.connect(dbConfig.url, {
     process.exit();
 });
 
-app.get('/', (req, res) => {
-    res.json({"message": "Hello Crud Node Express"});
-});
 
 // const map = new mapgl.Map('container', {
 //     key: 'Your API access key',
